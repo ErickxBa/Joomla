@@ -1,0 +1,16 @@
+{
+    "services": {
+      "web": {
+        "env": {
+          "MYSQLHOST": "${MYSQLHOST}",
+          "MYSQLUSER": "${MYSQLUSER}",
+          "MYSQL_ROOT_PASSWORD": "${MYSQL_ROOT_PASSWORD}",
+          "MYSQL_DATABASE": "${MYSQL_DATABASE}"
+        },
+        "build": {
+          "dockerfile": "Dockerfile"
+        }
+      }
+    }
+  }
+  
