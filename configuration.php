@@ -12,11 +12,11 @@ class JConfig {
 	public $debug = false;
 	public $debug_lang = false;
 	public $debug_lang_const = true;
-	public $dbtype = 'mysql';
-	public $host = 'localhost';
-	public $user = 'root';
-	public $password = '';
-	public $db = 'joomla_db';
+	public $dbtype = 'mysqli';
+	public $host = getenv("MYSQLHOST");
+	public $user = getenv("MYSQLUSER");
+	public $password = getenv("MYSQLPASSWORD");
+	public $db = getenv("MYSQLDATABASE");
 	public $dbprefix = 'lgs1e_';
 	public $dbencryption = 0;
 	public $dbsslverifyservercert = false;
