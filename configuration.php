@@ -57,8 +57,8 @@ class JConfig {
 	public $unicodeslugs = false;
 	public $feed_limit = 10;
 	public $feed_email = 'none';
-	public $log_path = 'D:\\Program Files\\XAMPP\\htdocs\\Joomla\\administrator/logs';
-	public $tmp_path = 'D:\\Program Files\\XAMPP\\htdocs\\Joomla/tmp';
+	public $log_path = '/var/www/html/administrator/logs';
+	public $tmp_path = '/var/www/html/tmp';	
 	public $lifetime = 15;
 	public $session_handler = 'database';
 	public $shared_session = false;
