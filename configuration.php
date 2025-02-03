@@ -12,11 +12,12 @@ class JConfig {
 	public $debug = false;
 	public $debug_lang = false;
 	public $debug_lang_const = true;
-	public $dbtype = 'mysql';
-	public $host = getenv("MYSQLHOST");
-	public $user = getenv("MYSQLUSER");
-	public $password = getenv("MYSQLPASSWORD");
-	public $db = getenv("MYSQLDATABASE");
+	public $dbtype = 'mysqli';
+	public $host = getenv("MYSQLHOST") ?: 'mysql.railway.internal';
+	public $user = getenv("MYSQLUSER") ?: 'root';
+	public $password = getenv("MYSQLPASSWORD") ?: 'oyMUKMEKhGnfQedbLKKJomSmGnmvqSRm';
+	public $db = getenv("MYSQLDATABASE") ?: 'railway';
+	public $port = getenv("MYSQLPORT") ?: '3306';
 	public $dbprefix = 'lgs1e_';
 	public $dbencryption = 0;
 	public $dbsslverifyservercert = false;
